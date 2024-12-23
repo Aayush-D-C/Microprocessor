@@ -1,0 +1,11 @@
+		MVI C, 0A H
+		LXI H, 3000H
+		LXI D, 4000H 
+UP:		MOV A,M
+		STAX D
+		INX H
+		INX D
+		DCR C
+		JNZ UP
+		HLT
+
