@@ -1,0 +1,10 @@
+		MVI D, 0A H
+		LXI H, 6000H
+		LXI B, 7000H 
+UP:		MOV A,M
+		STAX B
+		INX H
+		INX B
+		DCR D
+		JNZ UP
+		HLT
